@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perusahaan XYZ - Export & Import</title>
+  <meta name="description" content="Perusahaan XYZ — Solusi terpercaya untuk layanan ekspor dan impor barang. Cepat, aman, dan efisien.">
+  <style>
+    :root{
+      --accent:#0b6efd;
+      --dark:#0b1a2b;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --glass:rgba(255,255,255,0.06);
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f7fbff 0%, #eef6ff 100%);color:var(--dark);line-height:1.6}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-weight:600}
+    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:flex;gap:40px;align-items:center;padding:40px 0}
+    .hero-left{flex:1}
+    .eyebrow{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted);margin-bottom:14px}
+    h1{font-size:38px;margin:0 0 14px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta-row{display:flex;gap:12px}
+    .cta-primary{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .cta-secondary{background:transparent;color:var(--accent);padding:12px 18px;border-radius:10px;border:2px solid var(--accent);text-decoration:none;font-weight:700}
+
+    .hero-right{flex:1}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));box-shadow:0 8px 24px rgba(15,23,42,0.08);border-radius:14px;padding:18px}
+    .stats{display:flex;gap:14px;justify-content:space-between}
+    .stat{flex:1;text-align:center;padding:10px}
+    .stat h3{margin:0;color:var(--accent)}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+    .service{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(10,20,40,0.04)}
+    .service h4{margin:0 0 8px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    /* About */
+    .about{display:flex;gap:28px;align-items:center;margin:28px 0}
+    .about img{max-width:100%;border-radius:10px}
+
+    /* Contact */
+    .contact{background:linear-gradient(180deg,#ffffff,#f8fbff);padding:22px;border-radius:12px;margin:28px 0;display:flex;gap:20px}
+    .contact form{flex:1}
+    .form-row{display:flex;gap:8px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf7;font-size:14px}
+    button[type=submit]{background:var(--accent);color:#fff;padding:12px 16px;border-radius:8px;border:0;font-weight:700}
+
+    footer{padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{flex-direction:column}
+      .services{grid-template-columns:repeat(1,1fr)}
+      .about{flex-direction:column}
+      nav a{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">EX</div>
+        <div>
+          <div style="font-weight:800">Perusahaan XYZ</div>
+          <div style="font-size:12px;color:var(--muted)">Export & Import Solutions</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Layanan</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+        <a class="btn" href="#contact">Hubungi</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <span class="eyebrow">Trusted Since 2005</span>
+        <h1>Mempercepat rantai pasokan global Anda — ekspor & impor tanpa hambatan</h1>
+        <p class="lead">Perusahaan XYZ menyediakan layanan logistik, kepabeanan, dan manajemen rantai pasokan untuk menghubungkan produk Anda ke pasar global dengan cepat, aman, dan efisien.</p>
+        <div class="cta-row">
+          <a class="cta-primary" href="#contact">Dapatkan Penawaran</a>
+          <a class="cta-secondary" href="#services">Lihat Layanan</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card">
+          <h3 style="margin-top:0">Ringkasan Perusahaan</h3>
+          <p style="color:var(--muted);margin-bottom:12px">Pelayanan end-to-end: pengurusan dokumen, freight forwarding, clearance bea cukai, dan asuransi kargo.</p>
+          <div class="stats">
+            <div class="stat">
+              <div style="font-size:20px;font-weight:800">+1200</div>
+              <div style="font-size:12px;color:var(--muted)">Pengiriman Tahunan</div>
+            </div>
+            <div class="stat">
+              <div style="font-size:20px;font-weight:800">98%</div>
+              <div style="font-size:12px;color:var(--muted)">Tepat Waktu</div>
+            </div>
+            <div class="stat">
+              <div style="font-size:20px;font-weight:800">50+</div>
+              <div style="font-size:12px;color:var(--muted)">Rute Internasional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 style="margin-bottom:12px">Layanan Kami</h2>
+      <div class="services">
+        <div class="service">
+          <h4>Freight Forwarding</h4>
+          <p>Pengaturan pengiriman laut, udara, dan darat dengan operator terverifikasi dan tarif kompetitif.</p>
+        </div>
+        <div class="service">
+          <h4>Kepabeanan & Clearance</h4>
+          <p>Penanganan dokumen kepabeanan dan proses clearance cepat agar barang Anda tidak tertahan.</p>
+        </div>
+        <div class="service">
+          <h4>Manajemen Rantai Pasok</h4>
+          <p>Optimasi inventaris, pelacakan real-time, dan laporan kinerja untuk efisiensi biaya.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div style="flex:1">
+        <h2>Tentang Perusahaan XYZ</h2>
+        <p style="color:var(--muted)">Kami adalah mitra logistik yang mengutamakan kepatuhan, keamanan, dan kecepatan. Tim profesional kami mengelola seluruh proses impor dan ekspor, mulai dari konsultasi pra-ekspor sampai pengantaran akhir ke penerima.</p>
+        <ul style="color:var(--muted)">
+          <li>Jaringan global ke pelabuhan & bandara utama</li>
+          <li>Tim ahli kepabeanan berpengalaman</li>
+          <li>Solusi kustom sesuai kebutuhan bisnis</li>
+        </ul>
+      </div>
+      <div style="flex:1">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='360'><rect width='100%' height='100%' fill='%23eaf4ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%230b6efd' font-size='24'>Ilustrasi Logistik & Kargo</text></svg>" alt="Ilustrasi">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak & Permintaan Penawaran</h2>
+      <div class="contact">
+        <form action="#" method="post">
+          <div style="margin-bottom:10px"><label>Nama Perusahaan</label><input type="text" placeholder="Nama perusahaan"></div>
+          <div style="margin-bottom:10px"><label>Email</label><input type="email" placeholder="email@domain.com"></div>
+          <div style="margin-bottom:10px"><label>Pesan</label><textarea rows="4" placeholder="Jelaskan kebutuhan ekspor/impor Anda"></textarea></div>
+          <button type="submit">Kirim Permintaan</button>
+        </form>
+        <div style="width:320px;min-width:220px">
+          <div style="background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 18px rgba(10,20,40,0.04)">
+            <strong>Alamat</strong>
+            <p style="margin:6px 0;color:var(--muted)">Jl. Contoh No. 123, Jakarta, Indonesia</p>
+            <strong>Telepon</strong>
+            <p style="margin:6px 0;color:var(--muted)">+62 21 555 1234</p>
+            <strong>Email</strong>
+            <p style="margin:6px 0;color:var(--muted)">info@perusahaanxyz.co.id</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Perusahaan XYZ — All rights reserved. &nbsp; | &nbsp; Kebijakan Privasi
+    </footer>
+  </div>
+</body>
+</html>
